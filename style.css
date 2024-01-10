@@ -22,8 +22,9 @@ nav {
     align-items: center;
 }
 
-.logo {
-    width: 450px;
+.hero_logo_pc {
+     width: 35vw;
+    /* Logo's size is 35% of Total Width of Viewport or visible screen */
 }
 
 .navlinks {
@@ -104,19 +105,21 @@ nav {
     display: none;
 }
 
-.mobile_logo {
+.hero_logo_mobile {
     display: none;
 }
 
 @media(max-width: 700px) {
-    .logo {
+    .hero_logo_pc {
         display: none;
     }
 
-    .mobile_logo {
-        margin-right: 270px;
-        display: block;
-        width: 70px;
+    .hero_logo_mobile {
+        margin: 2vw 60vw 0% 0%;
+        /* margin: top right bottom left; */
+        display: block;  
+        /* Display is block so the logo can be resized */
+        width: 15vw;
     }
 
     .text_box h1 {
