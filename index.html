@@ -23,10 +23,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,900;6..12,1000&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
 </head>
 <body>
 
-<section class="hero">
+<header class="hero">
 <nav>
     <!-- UET Logo on the top left corner of large Screens -->
     <a href="index.html" ><img src="Images/uet_logo_pc.png" alt="University of Engineering and Technology: 100 Years of Academic Excellence" class="hero_logo_pc"></a>
@@ -35,106 +36,114 @@
 
     <div class="navlinks" id="navLinks">
         <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <!-- On small screens an 'x' mark will allow the users to close the navigation links -->
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="About_Us.html">About</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Degree">Degrees</a></li>
+            <li><a href="#Campuses">Campuses</a></li>
+            <li><a href="#Facilities">Facilities</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
         </ul>
     </div>
     <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    <!-- On small screen '3 bars' will allow the user the access navigation link -->
 </nav>
 <div class="text_box">
     <h1>University of Engineering and Technology, Lahore</h1>
-    <p>To generate knowledge for global competitive advantage and become a leading world class research University.</p>
-    <a href="">Know More</a>
+    <a href="#">Know More</a>
 </div>
-</section>
+</header>
 
 <!-- Courses -->
-<section class="Course">
-    <h1>Courses We Offer</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, quam.</p>
-    <div class="row">
-        <div class="course_col">
+<section class="Course" id="Degree">
+    <h1>Degree Programs</h1>
+    <p>UET Lahore offers a wide range of degree programs from associate degree to undergraduate and postgraduate degrees</p>
+    <div class="container">
+        <div class="course">
             <h3>Associate Degree</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cumque ad? Magni officia ipsum magnam impedit praesentium harum numquam rerum?</p>
+            <p>An associate degree or associate's degree is an undergraduate degree awarded after a course of post-secondary study lasting two to three years. It is a level of academic qualification above a high school diploma and below a bachelor's degree.</p>
         </div>
-        <div class="course_col">
+        <div class="course">
             <h3>Undergraduate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cumque ad? Magni officia ipsum magnam impedit praesentium harum numquam rerum?</p>
+            <p>A bachelor's degree or baccalaureate is an undergraduate degree awarded by colleges and universities upon completion of a course of study lasting three to six years.</p>
         </div>
-        <div class="course_col">
+        <div class="course">
             <h3>Postgraduate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cumque ad? Magni officia ipsum magnam impedit praesentium harum numquam rerum?</p>
+            <p>A postgraduate degree is a type of qualification that is completed after an undergraduate degree. Postgraduate degrees encompass a range of qualifications, including masters degrees, Postgraduate Diplomas and Certificates, and PhDs.</p>
         </div>
     </div>
 </section>
 
-<!-- Our Global Campus-->
-<div class="global_campus">
-    <h1>Our Global Campus</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta officiis, hic modi quia beatae cum tempore possimus iste qui dolores!</p>
-    <div class="row">
-        <div class="col">
-            <img src="Images/london.png" alt="">
+<!-- Our Campuses-->
+<div class="campuses" id="Campuses">
+    <h1>Campuses</h1>
+    <p>Besides Lahore, UET also has campuses in KSK, Narowal, Faisalabad, and Rachna.</p>
+    <div class="container">
+        <div class="campus">
+            <img src="Images/Hero_Section_UET.jpg" alt="University of Engineering and Technology, Main Campus, Lahore" style="height: 158px; width: 316px;" class="campus_photo">
             <div class="layer">
                 <h3>Lahore</h3>
             </div>
         </div>
-        <div class="col">
-            <img src="Images/washington.png" alt="">
+        <div class="campus">
+            <img src="Images/UET_New_Campus.jpg" alt="University of Engineering and Technology, New Campus, KSK" class="campus_photo">
             <div class="layer">
-                <h3>Washington</h3>
+                <h3>KSK</h3>
             </div>
         </div>
-        <div class="col">
-            <img src="Images/newyork.png" alt="">
+        <div class="campus">
+            <img src="Images/UET-Faisalabad-Campus.jpg" alt="University of Engineering and Technology, Faisalabad" class="campus_photo">
             <div class="layer">
-                <h3>New York</h3>
+                <h3>Faisalabad</h3>
+            </div>
+        </div>
+        <div class="campus">
+            <img src="Images/UET-Narrowal-Campus.jpg" alt="University of Engineering and Technology, Narowal" class="campus_photo">
+            <div class="layer">
+                <h3>Narowal</h3>
+            </div>
+        </div>
+        <div class="campus">
+            <img src="Images\UET-Rachna-Campus.jpg" alt="University of Engineering and Technology, Rachna" class="campus_photo">
+            <div class="layer">
+                <h3>Rachna</h3>
             </div>
         </div>
     </div>
-
-
 </div>
 </div>
 </div>
 
 <!-- Facilities -->
-<section class="facilities">
+<section class="facilities" id="Facilities">
     <h1>Our Facilities</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, optio.</p>
-    <div class="row">
-        <div class="col">
-            <img src="Images/library.png" alt="">
-            <h3>World Class Library</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolores beatae quas necessitatibus recusandae a quae asperiores praesentium corrupti amet.</p>
+    <div class="container">
+        <div class="facility">
+            <img src="Images\library.jpg" alt="">
+            <h3>Library</h3>
+            <p>World-class library with a collection of more than 100,000+ books.</p>
         </div>
-        <div class="col">
-            <img src="Images/basketball.png" alt="">
-            <h3>Largest Play Ground</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolores beatae quas necessitatibus recusandae a quae asperiores praesentium corrupti amet.</p>
+        <div class="facility">
+            <img src="Images\Gym.jpg" alt="">
+            <h3>Gym</h3>
+            <p>Gym with all the equipments for the physical health of students.</p>
         </div>
-        <div class="col">
-            <img src="Images/cafeteria.png" alt="">
-            <h3>Tasty and Healthy Food</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolores beatae quas necessitatibus recusandae a quae asperiores praesentium corrupti amet.</p>
+        <div class="facility">
+            <img src="Images\mosque.jpg" alt="">
+            <h3>Mosque</h3>
+            <p>A mosque to to offer prayer.</p>
         </div>
     </div>
 </section>
 
 <!-- Testimonials -->
-<section class="testimonial">
+<section class="testimonial" id="Testimonials">
     <h1>What Our Student Says!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officiis suscipit accusamus vero dignissimos modi corrupti at nemo amet ipsam.</p>
-    <div class="row">
-        <div class="col">
+    <div class="container">
+        <div class="review">
             <img src="Images/user1.jpg" alt="">
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti ipsum porro delectus voluptas nemo dolor in non esse! Aliquid assumenda corrupti explicabo reprehenderit alias labore excepturi delectus fugiat magni!</p>
-                <h3>Harley Quin</h3>
+                <h3>Hareem Akram</h3>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -142,11 +151,11 @@
                 <i class="fa fa-star"></i>
             </div>
         </div>
-        <div class="col">
+        <div class="review">
             <img src="Images/user2.jpg" alt="">
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti ipsum porro delectus voluptas nemo dolor in non esse! Aliquid assumenda corrupti explicabo reprehenderit alias labore excepturi delectus fugiat magni!</p>
-                <h3>Jack Hood</h3>
+                <h3>Ali Chaudhary</h3>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -155,12 +164,6 @@
             </div>
         </div>
     </div>
-</section>
-
-<!-- CALL TO ACTION -->
-<section class="cta">
-    <h1>Apply in any course from <br>all around the world</h1>
-    <a href="" class="cta_button">CONTACT US</a>
 </section>
 
 <!-- FOOTER -->
@@ -175,14 +178,5 @@
         </div>
 </section>
 
-<script>
-    var navlinks=document.getElementById("navlinks");
-    function showMenu(){
-        navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-200px";
-    }
-</script>
 </body>
 </html>
