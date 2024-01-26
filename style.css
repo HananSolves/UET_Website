@@ -312,9 +312,6 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.testimonial .container .review{
-    flex-basis: 39%;
-}
 
 .testimonial .container .review {
     flex-basis: 44%;
